@@ -1,0 +1,31 @@
+.flex-item{
+    background-color: red;
+    border: 2px solid black;
+    margin: 12px;
+    height: 122px;
+    width: 122px;
+
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid grey;
+    height: 45vh;
+}
+.item1{
+   order: 1;
+   flex-grow: 1;
+    
+}
+.item3{
+   order: 1.5;
+   flex-grow: 1;
+ 
+}
+.item2{
+   order: 2;
+   flex-grow: 1;
+    
+}
+

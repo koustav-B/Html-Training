@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Pseudo-class example */
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red; /* Link turns red when hovered */
+    }
+
+    input:focus {
+      border: 2px solid green; /* Input highlights when focused */
+    }
+
+    /* Pseudo-element example */
+    p::first-letter {
+      font-size: 2em;   /* First letter is larger */
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Pseudo-classes & Pseudo-elements</h1>
+
+  <p>This is a paragraph to demonstrate pseudo-elements.</p>
+  <p>Notice the first letter and the sparkle at the end.</p>
+
+  <a href="#">Hover over this link</a><br><br>
+
+  <input type="text" placeholder="Click here to focus">
+</body>
+</html>

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction:row;
+    /*justify-content:center;*/
+    align-items:center;
+    border: 10px solid black;
+    height: 100vh;
+    flex-wrap: wrap;
+    
+}
+.box{
+    width: 150px;
+    height: 150px;  
+    font-size: 8em;
+    text-align: center; 
+    border-radius: 50px;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: burlywood;
+}
+#box3{
+    background-color: yellowgreen;
+}
+#box4{
+    background-color: cadetblue;
+}
+#box5{
+    background-color: wheat;
+}

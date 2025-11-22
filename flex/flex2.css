@@ -1,0 +1,33 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+ 
+}
+.header {
+  background: grey;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.content {
+  overflow-y: auto;
+  flex: 1; 
+  padding: 1rem;
+  background: #f0f0f0;
+}
+.footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}

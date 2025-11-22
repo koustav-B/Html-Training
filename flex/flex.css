@@ -1,0 +1,24 @@
+.flex-item{
+    background-color: red;
+    border: 2px solid black;
+    margin: 12px;
+    height: 122px;
+    width: 122px;
+
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;/*we can use flex-start,flex-end* */
+    justify-content: center;/*shob centre e chole elo of cross axis*/
+    border: 2px solid grey;
+    height: 45vh;
+    /*flex-wrap: wrap;
+    /*flex-flow: column wrap;*/
+}
+.item1{
+    /*order: 3;
+    /*flex-grow: 2;*/
+   /* align-self: center; /*isolated, no functions will work on it*/
+   /* flex-shrink: 2;/*shrinking it to the max without pushing it down*/
+}

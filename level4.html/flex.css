@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#container{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    align-content:flex-start;
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: darkkhaki;
+    height: 200px;
+}
+#box3{
+    background-color: pink;
+    height: 75px;
+}
+#box4{
+    background-color: cadetblue;
+}

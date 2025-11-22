@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Flexbox Example</title>
+    <link rel="stylesheet" href="allign2.css">
+</head>
+<body>
+
+    <h1>Simple Flexbox Demo (5 Containers)</h1>
+
+    <h2>Container 1 — Row + Space Between</h2>
+    <div class="container c1">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+    </div>
+
+    <h2>Container 2 — Column Direction</h2>
+    <div class="container c2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <h2>Container 3 — Order + Align Self</h2>
+    <div class="container c3">
+        <div class="box" style="order: 3;">Item 1</div>
+        <div class="box" style="order: 1; align-self: flex-start;">Item 2</div>
+        <div class="box" style="order: 2; align-self: flex-end;">Item 3</div>
+    </div>
+
+
+    <h2>Container 4 — Wrap + Gap</h2>
+    <div class="container c4">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+    </div>
+
+    <h2>Container 5 — flex: grow demo</h2>
+    <div class="container c5">
+        <div class="box grow1">Grow 1</div>
+        <div class="box grow2">Grow 2</div>
+        <div class="box">Normal</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+h1, h2 {
+  margin-bottom: 10px;
+}
+/* Flex container styling */
+.container {
+  display: flex;      
+  border: 2px solid #333;
+  padding: 10px;
+  width: 300px;      
+  margin-bottom: 25px;
+  background: #f2f2f2;
+  gap: 10px;            
+}
+
+.item {
+  width: 60px;
+  height: 40px;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #888;
+}
+.nowrap {
+  flex-wrap: nowrap;    /* Items stay on one line */
+}
+
+.wrap {
+  flex-wrap: wrap;       /* Items move to next line */
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse; /* Wrapping happens in reverse direction */
+}

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: lightblue;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #999;
+}
+
+/* Container 1: Row + Space Between */
+.c1 {
+    justify-content: space-between;
+}
+
+
+.c2 {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.c3 {
+    height: 100px;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.c4 {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grow1 {
+    flex: 1;   /* takes equal space */
+}
+.grow2 {
+    flex: 2;   /* takes double space */
+}

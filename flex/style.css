@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    width: 300px;
+    background-color: burlywood;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+

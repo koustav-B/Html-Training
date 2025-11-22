@@ -1,0 +1,33 @@
+/* Simple styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 200px 1fr 1fr;   /* 3 columns */
+    grid-template-rows: 80px 200px 100px;
+    gap: 10px;
+
+    /* Declaring grid areas */
+    grid-template-areas:
+        "header header header"
+        "sidebar main extra1"
+        "footer footer extra2";
+}
+
+.header  { grid-area: header; background: lightcoral; }
+.sidebar { grid-area: sidebar; background: lightblue; }
+.main    { grid-area: main; background: lightgreen; }
+.extra1  { grid-area: extra1; background: khaki; }
+.extra2  { grid-area: extra2; background: peachpuff; }
+.footer  { grid-area: footer; background: lightgray; }
+
+.item {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 6px;
+}

@@ -1,0 +1,22 @@
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    background: lightgray;
+}
+.grid-repeat {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-autofit {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.grid-autofill {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
