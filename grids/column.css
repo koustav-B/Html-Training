@@ -7,11 +7,9 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows:    repeat(9, 1fr);
     background-color: rgb(235, 233, 233);
-
 }
 .logo {
-    /* max-width: 100%; */
-    /* height: auto; */
+
     max-height: 70px;
     border-radius: 25px;
 }
@@ -58,27 +56,25 @@ ul li a {
   grid-column-end: span 4;
   grid-row-start: 2;
   grid-row-end: span 3;
-  /* background-color:wheat; */
+ 
 }
 .item3-1{
   grid-column-start: 2;
   grid-column-end: span 4;
   grid-row-start: 6;
   grid-row-end: span 3;
-  /* background-color:wheat; */
+
 }
 .item7-1{
   grid-column-start: 7;
   grid-column-end: span 5;
   grid-row-start: 2;
   grid-row-end: span 3;
-  /* background-color:wheat; */
 }
 .item8-1{
     grid-column-start: 7;
     grid-column-end: span 5;
     grid-row-start: 6;
     grid-row-end: span 3;
-    /* background-color:wheat; */
 }
  
