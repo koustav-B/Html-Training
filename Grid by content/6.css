@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns:
+      [sidebar-start] 200px 
+      [sidebar-end main-start] 1fr 
+      [main-end];
+  grid-template-rows:
+      [header-start] 80px 
+      [header-end content-start] auto 
+      [content-end footer-start] 60px 
+      [footer-end];
+  gap: 1px;
+}
+
+.header  { grid-area: header;  background: lightblue; }
+.sidebar { grid-area: sidebar; background: lightgreen; }
+.main    { grid-area: main;    background: peachpuff; }
+.footer  { grid-area: footer;  background: lightgray; }
+.container div {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 8px;
+}

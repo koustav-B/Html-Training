@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    [left] 200px
+    [middle] 1fr
+    [right] 200px;
+}
+
+/* Full width area */
+.header {
+  grid-column: left / right; /* spans col1 + col2 */
+}
+
+/* First column only */
+.sidebar {
+  grid-column: left / middle; /* col1 */
+}
+
+/* Second column only */
+.content {
+  grid-column: middle / right; /* col2 */
+}

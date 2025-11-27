@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns:
+    [col-start] 1fr
+    [col-start] 1fr
+    [col-start] 1fr;
+}
+
+.box1 {
+  grid-column: col-start 1 / col-start 2;
+}
+
+.box2 {
+  grid-column: col-start 2 / col-start 3;
+}
+
+.box3 {
+  grid-column: col-start 3 / col-start 4;
+}

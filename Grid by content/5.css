@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns:
+    [sidebar-start] 250px [sidebar-end main-start]/*sidebar-end=main start*/
+    1fr
+    [main-end];
+}
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+}
+.content {
+  grid-column: main-start / main-end;
+}
+.header {
+  grid-column: sidebar-start / main-end;
+}

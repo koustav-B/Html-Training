@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    [left] 150px
+    [middle] 1fr
+    [right] 150px;
+}
+.header {
+  grid-column: left / right;   /* from the left line to the right line */
+}
+
+.box1 {
+  grid-column: left / middle;  /* only the 1st column */
+}
+
+.box2 {
+  grid-column: middle / right; /* only the 2nd column */
+}
