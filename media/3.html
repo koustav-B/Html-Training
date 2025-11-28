@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portrait & Landscape Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .box {
+      padding: 10px;
+      font-size: 24px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    /* Portrait Mode */
+    @media (orientation: portrait) {
+      body {
+        background-color: lightblue;
+      }
+      .box {
+        background: dodgerblue;
+      }
+    }
+
+    /* Landscape Mode */
+    @media (orientation: landscape) {
+      body {
+        background-color: lightgreen;
+      }
+      .box {
+        background: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Rotate your screen</div>
+</body>
+</html>
