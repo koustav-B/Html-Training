@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns:
-    [sidebar-start] 250px [sidebar-end main-start]/*sidebar-end=main start*/
+    [sidebar-start] 250px [sidebar-end main-start]
     1fr
     [main-end];
 }
