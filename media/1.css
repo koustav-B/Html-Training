@@ -1,7 +1,4 @@
-
 /* Mobile First (Default)   */
-
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,14 +10,12 @@ body {
   color: white;
   text-align: center;
 }
-
 .container {
   display: grid;
   grid-template-columns: 1fr;  /* Mobile: 1 column */
   gap: 10px;
   padding: 10px;
 }
-
 .box {
   background: lightblue;
   padding: 20px;
@@ -28,10 +23,7 @@ body {
   text-align: center;
   font-size: 18px;
 }
-
-
 /* Tablet (min-width: 600px)*/
-
 
 @media (min-width: 600px) {
   .container {
@@ -44,15 +36,12 @@ body {
   }
 }
 
-
 /* Desktop (min-width: 1200px) */
-
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: auto;            /* Center the grid */
-    gap: 20px;               /* Bigger gaps */
+    margin: auto;            
+    gap: 20px;         
     grid-template-columns: repeat(3, 1fr);
   }
 
