@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root/*these are global in nature*/{
+            --color:blue;
+            --seccolor:lightblue;
+            --defpad:20px;
+            --defop:0.5;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /*background-color: lightgreen;*/
+            background-color: var(--color);
+        }
+        .container{
+            /*background-color: green*/
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 30px;
+            border: 2px solid var(--seccolor);
+        } 
+        ul li:first-child{
+            --color:rgb(145, 255, 0);/*now this becomes a local and it gets applied to that block only*/
+            background-color: var(--color);
+        }       
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui sapiente enim cum tempore quidem architecto sed quis repellat sint nihil dolore eum ea expedita explicabo repellendus distinctio, molestias magnam!
+    </div>
+</body>
+</html>
