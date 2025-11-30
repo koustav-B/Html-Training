@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter{
+            font-size: 2em;
+            font-style: italic;
+        }
+        p::first-line{
+            background-color: aquamarine;
+        }
+        p::selection{
+            color: aqua;
+            background-color: black;
+        }
+        #fruit li::before{
+            content: "🤣🤣";
+        }
+        #Apple::after{
+            content: "❤️";
+        }
+        #Mango::after{
+            content: "🥭";
+        }
+        #fruit li::marker{
+            content: "✅";
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At cum obcaecati saepe harum ipsa veritatis est enim. Nesciunt hic molestiae possimus eligendi nostrum ipsum inventore, optio asperiores quae nobis ad dolore at? Vero earum totam nesciunt quibusdam. Mollitia sunt consectetur perspiciatis a fugit maiores, magnam eius error. Corrupti voluptas, impedit ducimus, provident adipisci quasi reprehenderit vero consectetur officiis odit illo veniam quisquam nemo a aperiam unde quod? Cupiditate eveniet dignissimos alias commodi nam debitis explicabo voluptate quis vero neque quos sit iure fugit, assumenda possimus aliquid optio maiores? Atque nam dolor nisi eligendi nulla quibusdam optio nobis reiciendis laborum sint?</p>
+    <ul id="fruit">
+        <li id="Apple">Apple</li>
+        <li id="Mango">Mango</li>
+        <li id="Orange">Orange</li>
+    </ul>
+</body>
+</html>

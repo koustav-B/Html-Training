@@ -1,0 +1,13 @@
+/* Light mode default */
+body {
+  background: white;
+  color: black;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+}
