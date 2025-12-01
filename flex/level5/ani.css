@@ -1,0 +1,29 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    /*transition: all;
+    transition-duration: 2s;*/
+    top: 100px;
+    left: 100px;
+    /*transform: rotate(45deg);*/
+    /*transform: scale(2,2);*/
+    position: absolute;
+    animation-name: coloranimate;
+    animation-duration: 5s;
+    animation-timing-function: 3s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes coloranimate{
+    from{
+        left: 0px;
+
+    }
+    to{
+        right: 100px;
+    }
+}
