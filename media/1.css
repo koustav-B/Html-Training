@@ -1,7 +1,7 @@
-                /* Mobile First (Default)   */
-                body {
-                  margin: 0;
-                  font-family: Arial, sans-serif;
+/* Mobile First (Default)   */
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
                 }
                 .header {
                   background: dodgerblue;

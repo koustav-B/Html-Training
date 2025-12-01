@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        .box {
+        width: 150px;
+        height: 100px;
+        background: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        transition: transform 0.5s; /* smooth animation */
+        }
+
+/* Horizontal skew on hover */
+.box.skewX:hover {
+  transform: skewX(25deg);
+}
+
+/* Vertical skew on hover */
+.box.skewY:hover {
+  transform: skewY(25deg);
+}
+
+/* Both axes */
+.box.skewXY:hover {
+  transform: skew(25deg, 15deg);
+}
+</style>
+</head>
+<body>
+
+<h2>Hover to Skew Boxes</h2>
+
+<div class="box skewX">skewX</div>
+<div class="box skewY">skewY</div>
+<div class="box skewXY">skewXY</div>
+
+</body>
+</html>
