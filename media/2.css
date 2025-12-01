@@ -85,7 +85,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 /* Laptop / Desktop → 3 columns */
 @media (min-width: 1000px) {
   .container {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Variables</title>
     <style>
         :root/*these are global in nature*/{
             --color:blue;
@@ -27,15 +27,15 @@
             display: flex;
         }
         ul li{
-            list-style: none;
-            padding: 30px;
+            list-style: none;/*no bullet marks */
+            padding: var(--defpad);
             border: 2px solid var(--seccolor);
         } 
         ul li:first-child{
-            --color:rgb(145, 255, 0);/*now this becomes a local and it gets applied to that block only*/
+            --color:red;/*now this becomes a local and it gets applied to that block only*/
             background-color: var(--color);
+            opacity: var(--defop);
         }       
-
     </style>
 </head>
 <body>
