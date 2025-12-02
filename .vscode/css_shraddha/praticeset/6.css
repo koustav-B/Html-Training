@@ -1,0 +1,12 @@
+/* 6.css */
+.content-box {
+    width: 150px;          /* optional: set size */
+    height: 150px;         /* optional: set size */
+    margin: 10px;          /* spacing between boxes */
+    border: 3px solid black; /* adds a solid black border */
+    border-radius: 8px; 
+    display: inline-block;   /* optional: rounded corners */
+}
+#content{
+    height: 500px;
+}

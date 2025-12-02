@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+}
+#h1{
+    font-weight: normal;
+}
+#h2{
+    font-weight: bolder;
+}
+#one{
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+#two{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

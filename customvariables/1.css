@@ -1,11 +1,12 @@
-
 @property --myColor {
-  syntax: red;
-  inherits: true;
-  initial-value: blue;
+    syntax: '<color>';
+    inherits: true;
+    initial-value: blue;
 }
 
+
 /* Parent gives the value */
+
 .parent {
-  --myColor: red;
+    --myColor: red;
 }
