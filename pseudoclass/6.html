@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .switch {
+            width: 70px;
+            height: 30px;
+            background: #ccc;
+            border-radius: 30px;
+            position: relative;
+            cursor: pointer;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            line-height: 30px;
+        }
+        
+        .switch:before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background: #fff;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: .3s;
+        }
+        /* hide checkbox */
+        
+        #toggle {
+            display: none;
+        }
+        /* OFF text */
+        
+        .switch::after {
+            content: "OFF";
+        }
+        /* ON state */
+        
+        #toggle:checked+.switch {
+            background: #4caf50;
+        }
+        
+        #toggle:checked+.switch:before {
+            transform: translateX(40px);
+        }
+        /* ON text */
+        
+        #toggle:checked+.switch::after {
+            content: "ON";
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="switch"></label>
+
+</body>
+
+</html>

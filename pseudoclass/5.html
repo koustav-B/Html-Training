@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style the placeholder text */
+        
+        input::placeholder {
+            color: blue;
+            font-style: italic;
+        }
+        /* When the input is invalid */
+        
+        input:invalid {
+            border: 2px solid red;
+            background: #ffe6e6;
+        }
+        /* When the input is valid */
+        
+        input:valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Simple Form Example</h3>
+    <label>Email:</label><br>
+    <input type="email" placeholder="Enter your email" required>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-div{
+div {
     height: 100px;
     width: 100px;
     background-color: aquamarine;
@@ -18,12 +18,11 @@ div{
     animation-direction: normal;
 }
 
-@keyframes coloranimate{
-    from{
+@keyframes coloranimate {
+    from {
         left: 0px;
-
     }
-    to{
+    to {
         right: 100px;
     }
 }

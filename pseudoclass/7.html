@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:not(.special) {
+            color: blue;
+        }
+        
+        div:has(button) {
+            border: 2px solid green;
+            padding: 10px;
+        }
+        
+         :where(h1, h2) {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <p>This paragraph becomes blue (because of :not)</p>
+    <p class="special">This one is NOT blue (:not ignores it)</p>
+
+    <!-- DIV with a button → :has() applies -->
+    <div>
+        <button>Click</button>
+    </div>
+
+    <!-- DIV without button → :has() does NOT apply -->
+    <div>
+        No button here
+    </div>
+
+</body>
+
+</html>
