@@ -4,95 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On/Off Toggle Button</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+    <title>Document</title>
+    <!DOCTYPE html>
+    <html>
 
-        .toggle-btn {
-            width: 100px;
-            height: 50px;
-            background-color: #ccc;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            position: relative;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+    <head>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                background: skyblue;
+                animation: grow 3s infinite;
+            }
+            
+            @keyframes grow {
+                0% {
+                    width: 100px;
+                    height: 100px;
+                }
+                50% {
+                    width: 150px;
+                    height: 150px;
+                }
+                100% {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        </style>
 
-        .toggle-btn.on {
-            background-color: #4caf50;
-        }
+    </head>
 
-        .toggle-btn .circle {
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            border-radius: 50%;
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            transition: transform 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
+    <body>
 
-        .toggle-btn.on .circle {
-            transform: translateX(50px) scale(1.1);
-        }
+        <div class="box"></div>
 
-        .toggle-btn .circle:active {
-            transform: scale(0.9);
-        }
+    </body>
 
-        .label {
-            color: white;
-            font-size: 18px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .status {
-            color: white;
-            font-size: 16px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="label">Toggle Button</div>
-        <button class="toggle-btn" id="toggleBtn">
-            <div class="circle"></div>
-        </button>
-        <div class="status" id="status">Status: OFF</div>
-    </div>
-
-    <script>
-        const toggleBtn = document.getElementById('toggleBtn');
-        const status = document.getElementById('status');
-        let isOn = false;
-
-        toggleBtn.addEventListener('click', function () {
-            isOn = !isOn;
-            toggleBtn.classList.toggle('on');
-            status.textContent = isOn ? 'Status: ON' : 'Status: OFF';
-        });
-    </script>
-</body>
+    </html>
 
 </html>

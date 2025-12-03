@@ -23,15 +23,14 @@
         .switch:before {
             content: "";
             position: absolute;
-            width: 26px;
-            height: 26px;
-            background: #fff;
+            width: 10px;
+            height: 10px;
+            background: black;
             border-radius: 50%;
             top: 2px;
             left: 2px;
             transition: .3s;
         }
-        /* hide checkbox */
         
         #toggle {
             display: none;
@@ -48,7 +47,7 @@
         }
         
         #toggle:checked+.switch:before {
-            transform: translateX(40px);
+            transform: translateX(10px);
         }
         /* ON text */
         
@@ -59,7 +58,6 @@
 </head>
 
 <body>
-
     <input type="checkbox" id="toggle">
     <label for="toggle" class="switch"></label>
 
