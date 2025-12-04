@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .box {
-        width: 100px;
-        height: 100px;
-        background: coral;
-        display: inline-block;
-        margin: 20px;
-        transition: transform 0.5s;
+        .box {
+            width: 100px;
+            height: 100px;
+            background: coral;
+            display: inline-block;
+            margin: 20px;
+            transition: transform 0.5s;
         }
-
-/* Center pivot */
-.box.center:hover {
-        transform: rotate(45deg);
-        transform-origin: center center; /* default */
-}
-
-/* Top-left pivot */
-.box.topLeft:hover {
-        transform: rotate(45deg);
-        transform-origin: top left;
-}
-
-/* Bottom-right pivot */
-.box.bottomRight:hover {
-        transform: rotate(45deg);
-        transform-origin: bottom right;
-}
-</style>
+        /* Center pivot */
+        
+        .box.center:hover {
+            transform: rotate(45deg);
+            transform-origin: center center;
+            /* default */
+        }
+        /* Top-left pivot */
+        
+        .box.topLeft:hover {
+            transform: rotate(45deg);
+            transform-origin: top left;
+        }
+        /* Bottom-right pivot */
+        
+        .box.bottomRight:hover {
+            transform: rotate(45deg);
+            transform-origin: bottom right;
+        }
+    </style>
 </head>
+
 <body>
     <div class="box center">Center</div>
     <div class="box topLeft">Top Left</div>
     <div class="box bottomRight">Bottom Right</div>
 </body>
+
 </html>

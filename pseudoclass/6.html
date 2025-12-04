@@ -17,7 +17,6 @@
             color: white;
             text-align: center;
             font-size: 13px;
-            line-height: 30px;
         }
         
         .switch:before {
@@ -26,9 +25,8 @@
             width: 10px;
             height: 10px;
             background: black;
-            border-radius: 50%;
+            border-radius: 44%;
             top: 2px;
-            left: 2px;
             transition: .3s;
         }
         
@@ -43,7 +41,7 @@
         /* ON state */
         
         #toggle:checked+.switch {
-            background: #4caf50;
+            background: lightgreen;
         }
         
         #toggle:checked+.switch:before {
@@ -59,7 +57,8 @@
 
 <body>
     <input type="checkbox" id="toggle">
-    <label for="toggle" class="switch"></label>
+    <label for="toggle" class="switch">
+    </label>
 
 </body>
 
