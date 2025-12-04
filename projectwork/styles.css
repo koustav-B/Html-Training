@@ -1,0 +1,186 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: whitesmoke;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    /* center the middle menu */
+    align-items: center;
+}
+
+
+/* CENTER MENU */
+
+.nav-center {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* LEFT LOGO — ABSOLUTE LEFT */
+
+.nav-logo {
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* RIGHT SIGNUP — ABSOLUTE RIGHT */
+
+.nav-signup {
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightseagreen;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+h6 {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.class {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+
+
+/* Cards row */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 180px;
+    height: 200px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card1 {
+    width: 150px;
+    height: 180px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.card2 {
+    width: 200px;
+    height: 220px;
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.card3 {
+    width: 170px;
+    height: 200px;
+    background-color: lavenderblush;
+    cursor: pointer;
+}
+
+.card4 {
+    width: 220px;
+    height: 180px;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.card5 {
+    width: 160px;
+    height: 240px;
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.btn-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-blue {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-white {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: 2px solid royalblue;
+    background: white;
+    color: royalblue;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Button Hover Animation */
+
+.btn-blue,
+.btn-white {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-blue:hover,
+.btn-white:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Card Hover Animation */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
+}
